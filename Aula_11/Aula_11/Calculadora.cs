@@ -8,12 +8,12 @@
         
         public void calcularAnoNascimento()
         {
-            anoNascimento = anoAtual - idadeDoUsuario;
+            anoNascimento = anoAtual - IdadeDoUsuario;
         }
 
-        public void status()
+        public void status(string NomeDoUsuario, int anoNascimento)
         {
-            Console.WriteLine($"Olá {nomeDoUsuario}, você nasceu em {anoNascimento}");
+            Console.WriteLine($"Olá {NomeDoUsuario}, você nasceu em {anoNascimento}");
         }
         
 

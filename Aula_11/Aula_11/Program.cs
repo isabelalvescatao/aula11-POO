@@ -5,10 +5,9 @@
         static void Main(string[] args)
         {
             Calculadora calcAnoNasc = new Calculadora();
-            Usuario usuario = new Usuario();
-            usuario.DadosDoUsuario();
+            calcAnoNasc.DadosDoUsuario();
             calcAnoNasc.calcularAnoNascimento();
-            calcAnoNasc.status();
+            calcAnoNasc.status(calcAnoNasc.NomeDoUsuario, calcAnoNasc.anoNascimento);
         }
     }
 }

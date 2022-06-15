@@ -2,17 +2,17 @@
 {
     internal class Usuario
     {
-        protected string nomeDoUsuario;
+        private string nomeDoUsuario;
         public string NomeDoUsuario
         {
             get { return nomeDoUsuario; }
-            set { nomeDoUsuario = NomeDoUsuario; }
+            set { nomeDoUsuario = value; }
         }
-        protected int idadeDoUsuario;
+        private int idadeDoUsuario;
         public int IdadeDoUsuario
         {
             get { return idadeDoUsuario; }
-            set { idadeDoUsuario = IdadeDoUsuario; }
+            set { idadeDoUsuario = value; }
         }
            
         public void DadosDoUsuario()
@@ -23,4 +23,16 @@
             idadeDoUsuario = int.Parse(Console.ReadLine());
         }
     }
+
+//    class TesteUsuario
+//    { 
+//        static void Main(string[] args)
+//    {
+//        Usuario user01 = new Usuario();
+//        user01.DadosDoUsuario();
+//        Console.WriteLine(user01.NomeDoUsuario);
+//        Console.WriteLine(user01.IdadeDoUsuario);
+
+//    }
+//}
 }
